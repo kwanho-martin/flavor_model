@@ -1,0 +1,15 @@
+# src/llm/prompt_templates.py
+
+# 작업별 설정 정의
+TASKS = {
+    "flavor_extraction": {
+        "system_key": "flavor_scientist",
+        "user_key": "extract_compounds",
+        "config": {"temperature": 0.0, "max_tokens": 500}
+    },
+    "pairing_creative": {
+        "system_key": "sommelier_expert",
+        "user_key": "predict_pairing",
+        "config": {"temperature": 0.8, "max_tokens": 1200}
+    }
+}
